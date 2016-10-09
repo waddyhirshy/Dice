@@ -5,7 +5,7 @@ In this assignment we'll practice using OOP (Object Oriented Programming) techni
 
 Your program must also display the total of all the dice and draw the dice with dots or similar marks.
 
-You may find the slides of [APCS-04-LowellDice.pptx]() presentation helpful, as well as the [Nested Loops](https://docs.google.com/document/d/1kzbAIebvhj0euZFYFa1WSLWWy_2cWwrq_sL0Ae4CaAw/edit?usp=sharing) and the [Math.random](https://drive.google.com/file/d/0Bz2ZkT6qWPYTSU84X3FSOGYwdFU/view?usp=sharing) worksheets.
+You may find the slides of [APCS-04-LowellDice.pptx]() presentation helpful, as well as the [nested-loops](https://docs.google.com/document/d/1-Dq8TJsrhODYg4_rZAtYttZ7MZOpCR0QWnM4Ai-kc04/edit?usp=sharing) and the [math-dot-random](https://docs.google.com/document/d/1wdDFix_9pCcoIAE7SkcFOyf7Z3pWfdCMhJJmjPJYusc/edit?usp=sharing) worksheets.
 
 Start by forking this repository. You will see two files: `Die.java` and `DiceRoller.java`.
 
