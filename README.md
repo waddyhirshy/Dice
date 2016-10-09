@@ -1,28 +1,31 @@
 Dice
 ====
 
-In this assignment we'll practice using OOP (Object Oriented Programming) techniques. We'll create a `class` to model what a single dice has and does, and then we will create at least 9 *instances* of that class arranged in a grid shape. (_Note: I use the term "Dice" as both singular and plural_)
+In this assignment we'll practice using OOP (Object Oriented Programming) techniques. We'll create a `class` to model what a single die has and does, and then we will create at least 9 *instances* of that class arranged in a grid shape.
 
 Your program must also display the total of all the dice and draw the dice with dots or similar marks.
 
 You may find the slides of [APCS-04-LowellDice.pptx]() presentation helpful, as well as the [Nested Loops](https://docs.google.com/document/d/1kzbAIebvhj0euZFYFa1WSLWWy_2cWwrq_sL0Ae4CaAw/edit?usp=sharing) and the [Math.random](https://drive.google.com/file/d/0Bz2ZkT6qWPYTSU84X3FSOGYwdFU/view?usp=sharing) worksheets.
 
-Start by forking [this repository](https://github.com/WoodstockAPJava/Dice). You will see two files: `Dice.java` and `DiceRoller.java`.
+Start by forking this repository. You will see two files: `Die.java` and `DiceRoller.java`.
 
-1. First put the basics in the `Dice` class. For now you should: 
-  - create instance variables for the dice's x and y coordinates, the size (pixel length of one side of the square), the color, and the value
-  - add code to the constructor which sets the x and y coordinates as provided in the arguments, sets the size and color to values of your choosing, and sets the value to 1 (yes, for now it's a cheat dice and will always roll 1)
-  - add code to the `draw` method, to simply draws the squace face of the dice (don't worry about the dots for now -- those will come later)
-2. Now write two lines in the drawing section of the DiceRoller class which will create one Dice and . You will need to complete the `show()` function that displays the die to the screen. Notice that the constructor takes arguments. We'll use those arguments to position the individual die cubes. Don't worry about the dots at first, just get the shape of the dice on the screen for now. Once you like the shape of your die, go back to `show()` and add some `if`s to check how many dots you need to put on the die. Start by "forcing" the die to always roll a one. Check to see that you can get one dot where it is suppose to be, and move on to two, and so on. If you are clever, you can combine some of the ifs and avoid duplicate code. 
-3. Now, use nested loops to display at least nine instances of the `Die` class. This is the power of OOP. It's not that much more work to make 1000 dice as it is to make one. Make sure the dots are on the dice. Your `show()` function will need to position the dots by adding some small amount to the x and y coordinates of the `rect()` of the `Die`
-4. Finally, add code to the `draw()` function so that your program displays the total for the roll to the screen.  
+1. First put the basics in the `Die` class. For now you should: 
+  - create instance variables for the die's x and y coordinates, the size (pixel length of one side of the square), the color, and the value
+  - add code to the constructor which sets the x and y coordinates as provided in the arguments, sets the size and color to values of your choosing, and sets the value to 1 (yes, for now it's a cheat die and will always roll 1)
+2. Now write two lines in the drawing section of the DiceRoller class. The first line will create one new Die and the second line will draw it. The `Die`'s `draw` method is empty right now, so nothing will be drawn. Add code to the `draw` method of the `Die` class, to simply draw the squace face of the die. Don't worry about the dots for now, just get the shape of the die on the screen.
+4. Once you like the shape of your die, add one dot to it. Right now your die always has a `value` of 1, so check to see that you can get that one dot where it is supposed to be, by adding some small amount to the x and y coordinates of the `Die`.
+5. Adapt the constructor so it randomly chooses a value (1-6) every time a new Die is created. Add some `if`s to the `draw` method to draw the correct number of dots on the face of the Die. If you are clever, you can combine some of the `if`s and avoid duplicate code. 
+6. Now in the drawing section of the `DiceRoller` class, use nested loops to create and draw at least nine instances of the `Die` class. This is the power of OOP. It's not that much more work to make 1000 dice as it is to make one. Make sure the dots are on the dice.
+7. Finally, add code to the drawing section of `DiceRoller` so that your program displays the total for the roll to the screen. (How will the DiceRoller class know what the value of each `Die` is?)
 
-Have fun and be creative. Your dice program doesn't have to look or work like any other.  
+Notice the `DiceRoller` class includes mouse and key listeners to redraw when you click or press `space`. 
+ 
+Have fun and be creative. Your dice program doesn't have to look or work like any other.
 
 Optional Extras
 ---------------
 
-For a challenge, you might see how many legible dice you can fit on the screen. You can also keep track of the rolls. You could display the average roll, or maybe a graph that shows how often each of the numbers from 2 to 12 have come up. This is useful in some dice games like Settlers of Catan. Check the links below for examples of other students work
+For a challenge, you might see how many legible dice you can fit in a 500x500 window. You can also keep track of all the rolls in each redraw and display an average roll, or maybe a graph that shows how often each of the numbers has come up. This is useful in some dice games like Settlers of Catan. Check the links below for examples of other students work.
 
 Samples of Student Work
 -----------------------
