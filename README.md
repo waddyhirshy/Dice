@@ -7,7 +7,7 @@ Your program must also display the total of all the dice and draw the dice with 
 
 You may find the slides of [APCS-04-LowellDice.pptx]() presentation helpful, as well as the [nested-loops](https://docs.google.com/document/d/1-Dq8TJsrhODYg4_rZAtYttZ7MZOpCR0QWnM4Ai-kc04/edit?usp=sharing) and the [math-dot-random](https://docs.google.com/document/d/1wdDFix_9pCcoIAE7SkcFOyf7Z3pWfdCMhJJmjPJYusc/edit?usp=sharing) worksheets.
 
-Start by forking this repository. You will see two files: `Die.java` and `DiceRoller.java`.
+__Start by forking this repository__. You will see two files: `Die.java` and `DiceRoller.java`.
 
 1. First put the basics in the `Die` class. For now you should: 
   - create instance variables for the die's x and y coordinates, the size (pixel length of one side of the square), the color, and the value
@@ -21,6 +21,8 @@ Start by forking this repository. You will see two files: `Die.java` and `DiceRo
 Notice the `DiceRoller` class includes mouse and key listeners to redraw when you click or press `space`. 
  
 Have fun and be creative. Your dice program doesn't have to look or work like any other.
+
+__Submit your assignment by copying the text of your two .java files into your forked repo, and creating a pull request.__
 
 Optional Extras
 ---------------
