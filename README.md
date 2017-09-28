@@ -1,5 +1,5 @@
 Dice
 ====
-Assignment instructions are posted at http://woodstockscs.github.io/instructions/dice.
+Assignment instructions are posted at http://woodstockcs.github.io/instructions/dice.
 
 
